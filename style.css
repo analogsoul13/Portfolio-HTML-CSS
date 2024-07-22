@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    visibility: hidden;
+}
+.header{
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    background:rgba(0,0,0,.7);
+    backdrop-filter: blur(5px);
+
+}
+.logoimg{
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    transition: all 0.5s;
+    background: transparent;
+}
+.logoimg:hover{
+    height: 120px;
+    width: 120px;
+}
+.nav{
+    background: transparent;
+}
+.links{
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 40px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: font-size 0.5s;
+    background: transparent;
+}
+.links:hover{
+    color: #00a8e8;
+    font-size: 20px;
+}
+#home{
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.home-content{
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 30px;
+    margin-top: 50px;
+    height: 100%;
+}
+.intro-text{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+#dbtn{
+    border-radius: 20px;
+    padding: 18px;
+    font-size: 15px;
+    color: white;
+    background-color: #00a8e8;
+    margin-top: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: font-size 0.5s;
+}
+
+#dbtn:hover{
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.image-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.social{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+}
+.pfp{
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    
+}
+/* about section */
+#about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.abt-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt-img{
+    height: 350px;
+    width: 700px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}   
+/* .abt-img:hover{
+    border: 2px solid #0c66c7;
+} */
+.about-text-container{
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    align-items: center;
+}
+.abt-heading{
+    margin-top: 80px;
+    font-size: 35px;
+}
+.abt-text{
+    color: white;
+    margin-top: 25px;
+    text-align: justify;
+    padding: 30px;
+}
+/* pseudo element */
+.abt-text::first-line{
+    color: #89d1ed;
+}
+
+/* skills  section */
+#skills-container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    justify-content: center;
+    text-align: center;
+}
+.skill-heading{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.skills{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#skill{
+    height: 80px;
+    width: 80px;
+}
+.python, .django, .html-skill,
+ .css-skill, .tailwind{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #070c2b;
+    border-radius: 10px;
+}
+/* socials  section */
+#socials-container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.social-heading{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 110px;
+    margin-bottom: 60px;
+    padding: 10px;
+}
+.socials{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #020517;
+    padding: 10px;
+}
+#social{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+.x, .github, .linkedin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* footer section */
+#footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.name-img-cont, .ft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-img{
+    width: 350px;
+    height: 100px;
+    transition-duration: 0.5s;
+}
+.name-img:hover{
+    width: 400px;
+    height: 150px;
+}
+/* Message section */
+.message-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.message-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email{
+    height: 30px;
+    width: 300px;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#message-me-inp{
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+#email,#message-me-inp{
+    padding: 5px;
+    margin: 10px;
+}
+#send-btn{
+    width: 90px;
+    background-color: #00a8e8;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+}
+#send-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}

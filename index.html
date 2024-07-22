@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header section -->
+    <section class="header" id="nav">
+        <img class="logoimg" src="./images/name3.png" alt="image unavailable" srcset="">
+        <div class="nav">
+                <a class="links" href="#home">HOME</a>
+                <a class="links" href="#about">ABOUT</a>
+                <a class="links" href="#skills-container">SKILLS</a>
+                <a class="links" href="#socials-container">CONTACT</a>
+        </div>
+    </section>
+    <!-- main section -->
+    <section id="home">
+        <div class="home-content">
+            <h1 id="message">Hi, iam <span style="color: #00a8e8;">Abin Mathew</span></h1>
+            <p class="intro-text">Full Stack Web Developer</p>
+            <a href="./images/AbinPMathew-Resume.pdf" download id="dbtn">Download CV</a>
+        </div>
+        <div class="image-container">
+            <img class="pfp" src="./images/abin2.jpg" alt="" srcset="">
+        </div>
+    </section>
+     <!-- About section -->
+    <section id="about">
+        <div class="abt-img-container">
+            <img class="abt-img" src="./images/web-dev-art.png" alt="" srcset="">
+        </div>
+        <div class="about-text-container">
+            <h1 class="abt-heading">About Me</h1>
+            <p class="abt-text">Highly motivated and talented Full Stack Web Developer seeking an opportunity to apply my skills and knowledge in a professional setting. Eager to contribute to a dynamic team, learn from experienced developers, and make a positive impact on projects while continuously developing my technical expertise.</p>
+        </div>
+
+    </section>
+     <!-- skills section -->
+    <section id="skills-container">
+            <h1 class="skill-heading">Skills</h1>
+            <div class="skills">
+                <div class="python">
+                    <img src="./images/icons8-python-144.png" id="skill" alt="" srcset="">
+                    <h1>Python</h1>
+                </div>      
+                <div class="django">
+                    <img src="./images/icons8-django-128.png" id="skill" alt="" srcset="">
+                    <h1>Django</h1>
+                </div>      
+                <div class="html-skill">
+                    <img src="./images/icons8-html-144.png" id="skill" alt="" srcset="">
+                    <h1>HTML</h1>
+                </div>      
+                <div class="css-skill">
+                    <img src="./images/icons8-css-144.png" id="skill" alt="" srcset="">
+                    <h1>CSS</h1>
+                </div>   
+                <div class="tailwind">
+                    <img src="./images/icons8-tailwind-css-144.png" id="skill" alt="" srcset="">
+                    <h1>Tailwind CSS</h1>
+                </div>                 
+            </div>
+    </section>
+       <!-- Socials Section -->
+    <section id="socials-container">
+        <h1 class="social-heading">Connect me</h1>
+        <div class="socials">
+            <a class="x" href="https://twitter.com/analogsoul13">
+                <img src="./images/icons8-x-250.png" id="social" alt="" srcset="">
+            </a>      
+            <a class="github" href="https://github.com/analogsoul13">
+                <img src="./images/icons8-github-250.png" id="social" alt="" srcset="">
+            </a>      
+            <a class="linkedin" href="">
+                <img src="./images/icons8-linkedin-250.png" id="social" alt="" srcset="">
+            </a>      
+        </div>
+    </section>
+
+   <footer id="footer">
+        <div class="name-img-cont">
+            <img src="./images/name2.png" alt="name" srcset="" class="name-img">
+        </div>
+        <div class="message-box">
+            <form action="" class="message-me">
+                <label for="email">Message Me</label>
+                <input type="email" id="email" placeholder="Your e-mail">
+                <textarea name="message" id="message-me-inp" placeholder="Enter your message here"></textarea>
+                <button type="submit" id="send-btn">Send</button>
+            </form>
+
+        </div>
+   </footer>
+
+</body>
+</html>
